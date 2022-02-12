@@ -13,7 +13,7 @@ int main( int argc, char * argv[] )
         QByteArray buffer;
         QDataStream s( &buffer, QIODevice::WriteOnly );
         s << i;
-        socket.writeDatagram( buffer, QHostAddress::LocalHost, 7777 );
+        socket.writeDatagram( buffer, QHostAddress::LocalHost, PORT );
         QThread::currentThread()->usleep( 1 );
     }
 

@@ -19,7 +19,7 @@ int main( int argc, char * argv[] )
     thread.start();
 
     QUdpSocket socket;
-    socket.bind( QHostAddress::LocalHost, 7777 );
+    socket.bind( QHostAddress::LocalHost, PORT );
 
     //    int n = 40000;
     //    if ( setsockopt( socket.socketDescriptor(), SOL_SOCKET, SO_RCVBUF, &n, sizeof( n ) ) == -1 ) {
